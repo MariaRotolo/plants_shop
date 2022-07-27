@@ -1,0 +1,140 @@
+
+
+.header {
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 6px 10px;
+    margin: 0 auto;
+
+    .header h1 {
+        color: black;
+        font-size: 15px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+
+.nav{
+    width: 300px ;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+
+    .chart{
+           width: 45px;
+           height: 45px;
+
+           margin: 0px 5px;
+           position: relative;
+           text-align: center;
+
+            button{
+                width: 100%;
+                height: 100%;
+
+                display: block;
+                color: black;
+                border: none;
+                cursor: pointer;
+                font-weight: 400;
+                font-size: 5px;
+                background: none;
+                background-image: url("../../images/cartimage.png");
+                background-size: 40px;
+                background-repeat: no-repeat;
+                background-position: center;
+
+
+                span{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+
+                    transform: translate(-50%, -20%);
+                    font-size: 14px;
+                    color: black;
+                    z-index: 2;
+                }
+
+        }
+    }
+
+    .logout_button_nav{
+        width: 80px;
+        height: 30px;
+        display: block;
+        padding: 2px 2px;
+        margin-top: 8px;
+
+        border: none;
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration: none;
+        text-align: center;
+        color: rgb(104, 114, 32);
+
+        background-color: rgb(242, 245, 247);
+
+    }
+}
+
+.open_chart{
+    z-index: 100;
+    position: absolute;
+    top: 20px;
+    right: 5px;
+
+    width: 40px;
+    height: 60px;
+    border: 2px solid black;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    will-change: opacity, transform;
+    opacity: 0; // cambia con toggle 
+    transition: opacity 0.5s ease-in-out 0s;
+
+    .open_chart_span_div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin: 0px 0px 2px;
+        padding: 2px 0px 0px;
+
+        
+    }
+
+    .button_checkout_open_chart{
+        width: 90px;
+        height: 45px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0px 0px 5px;
+        padding: 1px;
+
+        background-color: lightseagreen;
+        color: black;
+        border: none;
+        cursor: pointer;
+
+        font-weight: 500;
+        font-size:10px ;
+        text-decoration: none;
+
+    }
+}
